@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>My Selfie App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <a href="" id="link" download="myselfie.png"></a>
+
+            <h1 style="background-color: aquamarine;">Voice Selfie App
+                <img src="myimg.jpg" id="image_logo">
+            </h1>
+            <hr>
+
+            <div class="form-group" style="background-color: goldenrod; color: cornflowerblue;">
+                <h3>Say "take my selfie"</h3>
+                <label>Your voice output : </label>
+
+                <br>
+                <br>
+
+                <textarea id="textbox" class="form-contorl" readonly="true"></textarea>
+
+                <br>
+                <br>
+
+                <button id="start-btn" class="btn btn-primary" onclick="start();">START</button>
+
+            </div>
+
+            <div id="result" style="background-color:darkslateblue; color: bisque;">
+
+                <h3>RESULT :</h3>
+
+                <br>
+                <br>
+
+                <img id="result" src="myimg.jpg" style="height: 400px; width: 500px;">
+
+            </div>
+
+        </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
